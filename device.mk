@@ -50,5 +50,12 @@ PRODUCT_SOONG_NAMESPACES += \
 # Inherit Private Keys
 -include vendor/lineage-priv/keys/keys.mk
 
+# NFC
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.boot.hardware.sku=munch
+
+PRODUCT_PACKAGES += \
+    MunchNfcOverlay
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/munch/munch-vendor.mk)
