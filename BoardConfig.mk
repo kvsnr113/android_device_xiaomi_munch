@@ -15,9 +15,6 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/munch.config
-
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := munch,munch_global,munch_in
 
