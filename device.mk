@@ -32,6 +32,11 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Camera
+ $(call inherit-product, vendor/xiaomi/miuicamera/miuicamera.mk)
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.product.mod_device=munch_global
+
 PRODUCT_PACKAGES += \
     libpiex_shim
 
