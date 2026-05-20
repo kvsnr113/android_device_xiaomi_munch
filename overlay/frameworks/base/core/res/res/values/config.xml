@@ -504,4 +504,9 @@
 
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
     <integer name="config_defaultRefreshRateInZone">120</integer>
+
+    <!-- The type of the light sensor to be used by the display framework -->
+    <string name="config_displayLightSensorType" translatable="false">
+        android.sensor.light
+    </string>
 </resources>
