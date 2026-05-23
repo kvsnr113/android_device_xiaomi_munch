@@ -62,5 +62,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     MunchNfcOverlay
 
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/munch/munch-vendor.mk)
